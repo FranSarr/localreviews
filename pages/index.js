@@ -21,7 +21,7 @@ export default function Home({ restaurants, hotels, thingsToDo }) {
 				<div className='grid md:grid-cols-3'>
 
         
-        {restaurants !== 0 && (
+        {(restaurants.length != 0) && (
             <div>
               <h2 className='mt-10 font-bold'>Restaurants</h2>
 
@@ -35,7 +35,7 @@ export default function Home({ restaurants, hotels, thingsToDo }) {
             </div>
           )}
 
-          {hotels && (
+          {(hotels.length != 0) && (
             <div>
               <h2 className='mt-10 font-bold'>Hotels</h2>
 
@@ -49,7 +49,7 @@ export default function Home({ restaurants, hotels, thingsToDo }) {
             </div>
           )}
 
-            {thingsToDo && (
+            {(thingsToDo.length != 0) && (
             <div>
               <h2 className='mt-10 font-bold'>Things to do</h2>
 
