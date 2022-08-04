@@ -21,7 +21,7 @@ export default function Home({ restaurants, hotels, thingsToDo }) {
 				<div className='grid md:grid-cols-3'>
 
         
-        {restaurants && (
+        {restaurants !== 0 && (
             <div>
               <h2 className='mt-10 font-bold'>Restaurants</h2>
 
